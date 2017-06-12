@@ -1,0 +1,10 @@
+version: "2"
+services:
+  parsoid:
+    image: parsoid
+    environment:
+    - PORT=8003
+    - MEDIAWIKI_PROTOCOL=http
+    - MEDIAWIKI_HOST=127.0.0.1
+    network_mode: "host"
+
